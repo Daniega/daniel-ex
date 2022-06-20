@@ -93,7 +93,7 @@
   @apply flex flex-row mx-auto flex-wrap mt-5 gap-3 md:flex-col md:flex-nowrap md:mx-0 md:w-[144px] lg:w-auto;
 }
 .discount-container {
-  @apply flex justify-between gap-3 md:gap-2 md:justify-start;
+  @apply flex justify-between gap-3 md:gap-2 md:justify-start lg:justify-between;
 }
 .store-logo {
   @apply hidden lg:block;

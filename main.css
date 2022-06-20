@@ -1172,6 +1172,12 @@ video {
   }
 }
 
+@media (min-width: 1024px) {
+  .discount-container {
+    justify-content: space-between;
+  }
+}
+
 .store-logo {
   display: none;
 }
