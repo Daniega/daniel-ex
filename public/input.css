@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+  @apply bg-[#F2F4F7];
+}
+.cards-container {
+  @apply flex flex-col items-center pt-10 gap-8 lg:gap-4;
+}
+.card {
+  @apply flex flex-col justify-between items-center gap-1 bg-white w-[340px] border-none rounded-xl shadow-card relative px-4 pt-6 pb-6 md:flex-row md:flex-wrap md:py-3 md:w-[672px] lg:w-[1024px] lg:pt-4;
+}
+.floating-banner {
+  @apply absolute flex items-center justify-between -left-2 -top-4 bg-[#FF5C00] rounded-r-lg text-white font-semibold px-4 py-1 text-base gap-2 md:bg-lighterBlue md:text-[#0B76E0];
+}
+.fire-icon {
+  @apply fill-white md:fill-[#0B76E0];
+}
+.small-banner-text {
+  @apply md:hidden;
+}
+.large-banner-text {
+  @apply hidden md:block;
+}
+.item-number {
+  @apply absolute -top-12 right-6 capitalize text-lightestGray font-bold text-[4rem] md:text-[3rem] md:-top-8 md:right-6 lg:text-[5rem] lg:static;
+}
+.item-img {
+  @apply mx-auto mt-4 w-[160px] md:mr-4 md:ml-0 md:mt-0 md:w-[118px] lg:w-[202px];
+}
+.item-details {
+  @apply flex flex-col leading-[140%] tracking-[0.2px] pb-5 w-full md:w-64 md:pb-0;
+}
+.item-title {
+  @apply order-3 text-base font-bold text-primaryGray w-full mb-1 cursor-pointer md:order-none md:max-w-[300px] md:text-sm;
+}
+.item-manufacturer {
+  @apply order-1 mx-auto text-sm text-mediumGray mb-3 md:order-none md:mx-0 md:text-xs;
+}
+.item-discount {
+  @apply order-2 text-sm bg-mediumBlue rounded text-white w-fit py-0.5 px-1 md:order-none md:hidden lg:block;
+}
+.item-rating {
+  @apply absolute top-[80px] right-[20px] flex flex-col self-center md:static;
+}
+.item-rating-number {
+  @apply flex flex-row leading-[140%] self-center text-primaryGray text-[24px] font-bold md:text-[20px] lg:text-[32px];
+}
+.item-rating-info {
+  @apply self-start w-[9px] lg:w-[13px];
+}
+.rating-stars {
+  @apply w-[50px] md:w-[50px] lg:w-[75px];
+}
+.card-action {
+  @apply flex flex-col w-full self-end gap-8 mx-auto md:mx-0 md:w-auto;
+}
+.btn-primary {
+  @apply text-center py-2 px-2 w-full text-base font-bold tracking-[0.2px] text-white bg-primaryBlue rounded-xl hover:bg-blue-800 md:w-36 md:py-1 md:text-sm lg:w-64 lg:py-2 lg:text-base;
+}
+.btn-secondary {
+  @apply text-center w-44 text-base font-bold tracking-[0.2px] text-primaryBlue border  border-primaryBlue bg-white rounded-lg hover:bg-lightBlue md:w-28 md:text-sm md:py-1 lg:w-64 ;
+}
+.card-action-footer {
+  @apply flex justify-between items-end;
+}
+.action-footer-text {
+  @apply text-sm text-mediumGray md:mx-auto lg:mx-0;
+}
+.footer-show {
+  @apply text-[#55626E] font-bold text-sm inline-flex items-baseline cursor-pointer md:hidden lg:inline-flex;
+}
+.footer-show-tablet {
+  @apply text-[#55626E] hidden text-sm font-medium inline-flex text-xs items-baseline cursor-pointer md:inline-flex md:mt-7 lg:hidden lg:mt-0;
+}
+.chevron {
+  @apply w-4 self-center;
+}
+.show-more-container {
+  @apply flex flex-col items-end basis-[100%] justify-between pt-5 hidden h-52 md:flex-row md:mt-4 lg:pl-[13%] lg:mt-0;
+}
+.highlights-container {
+  @apply w-full md:w-[500px] lg:w-auto;
+}
+.highlights-title {
+  @apply font-bold text-lg text-primaryGray mb-[0.5rem] md:text-lg lg:text-xl;
+}
+.highlights-bullets {
+  @apply text-xs list-disc pl-5 text-lightGray leading-[140%] md:text-sm;
+}
+.pricing-container {
+  @apply flex flex-row mx-auto flex-wrap mt-5 gap-3 md:flex-col md:flex-nowrap md:mx-0 md:w-[144px] lg:w-auto;
+}
+.discount-container {
+  @apply flex justify-between gap-3 md:gap-2 md:justify-start;
+}
+.store-logo {
+  @apply hidden lg:block;
+}
+.store-logo-mobile {
+  @apply ml-6 md:ml-0 md:w-[44px] lg:hidden;
+}
+.current-price {
+  @apply text-sm font-semibold ml-[23%] md:text-base md:ml-0 lg:text-2xl;
+}
+.list-price {
+  @apply text-sm text-lighterGray md:text-sm lg:text-lg;
+}
+.discount-percent {
+  @apply flex justify-center items-center text-[10px] text-saleRed md:pt-0.5 md:text-sm;
+}
+.secondary-action-container {
+  @apply flex flex-row mx-auto w-full justify-between md:mx-0 md:flex md:gap-4;
+}
