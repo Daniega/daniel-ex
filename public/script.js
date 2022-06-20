@@ -27,10 +27,9 @@ const handleToggle = evt => {
   chevron.appendChild(img);
   
   if (evt.target.innerText === 'Show more') {
-    evt.target.innerText = 'Show less';
-    evt.target.appendChild(chevron)
+      evt.target.innerText = 'Show less';
   } else {
-    evt.target.innerText = 'Show more';
-    evt.target.appendChild(chevron)
+      evt.target.innerText = 'Show more';
   }
+  evt.target.appendChild(chevron);
 };
