@@ -3,5 +3,5 @@ Install node_modules:
 
     yarn
 
-I used to run and develop using VS code "Live server"
+I used VS code "Live server" for development and run
 But running the .html file will do just fine
